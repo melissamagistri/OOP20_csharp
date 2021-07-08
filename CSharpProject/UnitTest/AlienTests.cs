@@ -11,19 +11,19 @@ namespace UnitTest
         [TestMethod]
         public void IsAlienAlive()
         {
-            Alien boss = new Alien(0, 0, GrandiProject.SpecificEntityType.ALIEN_1);
-            Assert.IsTrue(boss.IsAlive());
+            Alien alien = new Alien(0, 0, GrandiProject.SpecificEntityType.ALIEN_1);
+            Assert.IsTrue(alien.IsAlive());
         }
 
         [TestMethod]
         public void IsAlienDead()
         {
-            Alien boss = new Alien(0, 0, GrandiProject.SpecificEntityType.ALIEN_1);
-            while (boss.GetHits() <= boss.GetMaxHits())
+            Alien alien = new Alien(0, 0, GrandiProject.SpecificEntityType.ALIEN_1);
+            while (alien.GetHits() <= alien.GetMaxHits())
             {
-                boss.IncHits();
+                alien.IncHits();
             }
-            Assert.IsFalse(boss.IsAlive());
+            Assert.IsFalse(alien.IsAlive());
         }
 
         [TestMethod]
