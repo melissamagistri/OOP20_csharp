@@ -6,11 +6,11 @@ namespace GrandiProject
 {
 	public class Boss1 : Enemy
 	{
-		private readonly int INITIAL_WIDTH = 0;
-		private readonly int INITIAL_HEIGHT = 0;
-		private readonly double INITIAL_MU_X = 0;
-		private readonly double INITIAL_MU_Y = 0;
-		private readonly int MAX_HITS = 0;
+		private readonly int INITIAL_WIDTH = 5;
+		private readonly int INITIAL_HEIGHT = 5;
+		private readonly double INITIAL_MU_X = 5;
+		private readonly double INITIAL_MU_Y = 5;
+		private readonly int MAX_HITS = 10;
 
 		public Boss1(double x, double y)
 		{
